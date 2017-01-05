@@ -14,12 +14,7 @@
 
     <article class="container">
 
-
-      <!--  <%= render 'home/partials/flashly' %> -->
-
-      <% flash.each do |name, msg| %>
-        <%= content_tag(:div, msg, class: "alert alert-success") %>
-      <% end %>
+      <%= render 'home/partials/flashly' %>
 
       <%= yield %>
 
